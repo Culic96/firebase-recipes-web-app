@@ -4,6 +4,7 @@ import firebaseAuthService from "../FirebaseAuthService";
 function LoginForm({ existingUser }) {
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
+  // eslint-disable-next-line no-unused-vars
   async function handleSubmit(e) {
     e.preventDefault();
 
@@ -15,6 +16,7 @@ function LoginForm({ existingUser }) {
       alert(error.message);
     }
   }
+  // eslint-disable-next-line no-unused-vars
   function handleLogout() {
     firebaseAuthService.logOutUser();
   }
